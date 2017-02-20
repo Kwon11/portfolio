@@ -1,0 +1,24 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.CenterDisplay {
+  position: relative;
+}
+.NavBar {
+  position: relative;
+  display: flex;
+  background-color: grey;
+  height: 5vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.NavBarLink {
+}
+
+.HomePageImage {
+  position: relative;
+  height: 30vh;
+  width: 30vw;
+}
