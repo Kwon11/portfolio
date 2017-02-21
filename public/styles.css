@@ -5,6 +5,7 @@
 }
 .CenterDisplay {
   position: relative;
+  display: flex;
 }
 .NavBar {
   position: relative;
@@ -18,7 +19,16 @@
 }
 
 .HomePageImage {
+  position: fixed;
+  top: 25vh;
+  height: 40vh;
+}
+
+.CenterDisplayTitle {
   position: relative;
-  height: 30vh;
-  width: 30vw;
+  display: inline-flex;
+
+}
+.CenterDisplayText {
+
 }

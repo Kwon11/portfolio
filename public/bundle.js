@@ -26644,8 +26644,13 @@ var HomePage = function (_React$Component) {
         React.createElement("img", { src: "Chan Kwon.jpg", className: "HomePageImage" }),
         React.createElement(
           "div",
-          null,
-          "This is the HomePage bitch "
+          { className: "CenterDisplayTitle" },
+          "Chan Kwon "
+        ),
+        React.createElement(
+          "div",
+          { className: "CenterDisplayText" },
+          "I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. "
         )
       );
     }
