@@ -13,9 +13,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <NavBar />
-        <div className="CenterDisplay">
           {this.props.children}
-        </div>
       </div>
     )
   }

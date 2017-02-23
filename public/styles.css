@@ -1,34 +1,49 @@
+.html {
+  padding: 0px;
+  height: 99vh;
+  width: 99vw;
+}
 .App {
-  width: 100vw;
-  height: 100vh;
+  padding: 0px;
+  width: 99vw;
+  height: 97vh;
   position: relative;
 }
 .CenterDisplay {
   position: relative;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
 }
+.HomePageImage {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.HomePageText {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  align-items: center;
+}
+.CenterDisplayTitle {
+  text-align: center;
+}
+.CenterDisplayText {
+  position: relative;
+  width: 50%;
+}
+
 .NavBar {
   position: relative;
   display: flex;
   background-color: grey;
-  height: 5vh;
+  height: 5%;
   flex-direction: row;
   justify-content: space-between;
 }
 .NavBarLink {
-}
-
-.HomePageImage {
-  position: fixed;
-  top: 25vh;
-  height: 40vh;
-}
-
-.CenterDisplayTitle {
-  position: relative;
-  display: inline-flex;
-
-}
-.CenterDisplayText {
-
 }

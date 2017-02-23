@@ -1,12 +1,15 @@
 var React = require('react');
+var Project = require('./Project.jsx');
 
 class ProjectsPage extends React.Component {
 
   render () {
     return (
-        <div>
-          <img src="Chan Kwon.jpg" height="50" width="50"></img>
-          <div>This is the ProjectsPage bitch </div>
+        <div className="CenterDisplay">
+          <Project />
+          <Project />
+          <Project />
+          <Project />
         </div>
       )
   }
