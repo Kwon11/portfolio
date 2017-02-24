@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Slabo 27px');
 
 .NavBar {
   position: relative;
@@ -13,6 +13,7 @@
   display: inline;
   padding: 3%;
   color: #EEEEF1;
+  text-decoration: none;
 }
 .NavBarLink:hover {
   color: #CD6878;
@@ -96,7 +97,7 @@ body {
   border-width: 0px;
   height: 100vh;
   width: 100vw;
-  font-family:'Oswald', serif;
+  font-family:'Slabo 27px';
 }
 
 .HomeText {

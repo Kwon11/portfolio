@@ -26880,7 +26880,7 @@ var ContactPage = function (_React$Component) {
           React.createElement(
             'div',
             { className: 'LeftSideContent' },
-            React.createElement('img', { src: 'linkedInLogo.png', className: 'LinkedInLogo' }),
+            React.createElement('img', { href: 'www.linkedin.com/in/kwon11', src: 'linkedInLogo.png', className: 'LinkedInLogo' }),
             React.createElement('img', { src: 'GitHubLogo.png', className: 'GitHubLogo' }),
             React.createElement('img', { src: 'AngelListLogo.png', className: 'AngelListLogo' }),
             React.createElement(

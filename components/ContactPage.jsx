@@ -12,7 +12,7 @@ class ContactPage extends React.Component {
             <img src="logo.svg" className="LeftSideTitle"></img>
             <div className="LeftSideContent">
 
-              <img src="linkedInLogo.png" className="LinkedInLogo"></img>
+              <img href="www.linkedin.com/in/kwon11" src="linkedInLogo.png" className="LinkedInLogo"></img>
               <img src="GitHubLogo.png" className="GitHubLogo"></img>
               <img src="AngelListLogo.png" className="AngelListLogo"></img>
               <div>ChanTheManCan@Gmail.Com</div>
