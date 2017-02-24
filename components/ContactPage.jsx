@@ -2,7 +2,7 @@ var React = require('react');
 var NavBar = require('./NavBar.jsx');
 var ContactBar = require('./ContactBar.jsx');
 
-class HomePage extends React.Component {
+class ContactPage extends React.Component {
 
   render () {
     return (
@@ -11,17 +11,22 @@ class HomePage extends React.Component {
             <NavBar />
             <img src="logo.svg" className="LeftSideTitle"></img>
             <div className="LeftSideContent">
-            <div className="HomeText">I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developers. I am a web developer. </div>
+
+              <img src="linkedInLogo.png" className="LinkedInLogo"></img>
+              <img src="GitHubLogo.png" className="GitHubLogo"></img>
+              <img src="AngelListLogo.png" className="AngelListLogo"></img>
+              <div>ChanTheManCan@Gmail.Com</div>
+
             </div>
-            <ContactBar/>
+            <ContactBar />
           </div>
           <div className="RightSideDisplay">
             <img src="Chan Kwon.jpg" className="RightSideImage"></img>
           </div>
         </div>
-      )
+    )
   }
 
 }
 
-module.exports = HomePage;
+module.exports = ContactPage;

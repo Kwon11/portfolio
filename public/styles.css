@@ -1,49 +1,95 @@
-.html {
-  padding: 0px;
-  height: 99vh;
-  width: 99vw;
-}
-.App {
-  padding: 0px;
-  width: 99vw;
-  height: 97vh;
-  position: relative;
-}
-.CenterDisplay {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90%;
-}
-.HomePageImage {
-  position: relative;
-  display: flex;
-  height: 100%;
-}
-.HomePageText {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-grow: 1;
-  align-items: center;
-}
-.CenterDisplayTitle {
-  text-align: center;
-}
-.CenterDisplayText {
-  position: relative;
-  width: 50%;
-}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .NavBar {
   position: relative;
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 50vw;
   display: flex;
-  background-color: grey;
-  height: 5%;
-  flex-direction: row;
   justify-content: space-between;
 }
-.NavBarLink {
+.NavBarLink{
+  display: inline;
+  padding: 3%;
+  color: #EEEEF1;
+}
+
+.CenterDisplay {
+  position: relative;
+  display:flex;
+  height: 100%;
+  width: 100%;
+}
+
+.LeftSideDisplay {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 50vw;
+  text-align: center;
+  background-color: blue;
+}
+.LeftSideTitle {
+  padding: 10%;
+}
+.LeftSideContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  font-size: 1.2em;
+  color: #EEEEF1;
+}
+.ContactBar {
+  position: fixed;
+  display: flex;
+  height: 10vh;
+  top: 90vh;
+  width: 50vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.RightSideDisplay {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  background-color: black;
+  align-items: center;
+}
+
+.RightSideImage {
+  position: relative;
+  display: block;
+  height: 100%;
+  margin: auto;
+}
+
+.GitHubLogo {
+  width: 90px;
+  height: 20px;
+}
+.AngelListLogo {
+  width: 90px;
+  height: 20px;
+}
+.GmailLogo {
+  width: 25px;
+  height: 21px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  border-width: 0px;
+  height: 100vh;
+  width: 100vw;
+  font-family:'Oswald', serif;
+}
+
+.HomeText {
+  padding: 10%;
 }

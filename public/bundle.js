@@ -12034,6 +12034,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(5);
+var NavBar = __webpack_require__(111);
+var ContactBar = __webpack_require__(240);
 
 var HomePage = function (_React$Component) {
   _inherits(HomePage, _React$Component);
@@ -12045,25 +12047,31 @@ var HomePage = function (_React$Component) {
   }
 
   _createClass(HomePage, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return React.createElement(
-        "div",
-        { className: "CenterDisplay" },
-        React.createElement("img", { src: "Chan Kwon.jpg", className: "HomePageImage" }),
+        'div',
+        { className: 'CenterDisplay' },
         React.createElement(
-          "div",
-          { className: "HomePageText" },
+          'div',
+          { className: 'LeftSideDisplay' },
+          React.createElement(NavBar, null),
+          React.createElement('img', { src: 'logo.svg', className: 'LeftSideTitle' }),
           React.createElement(
-            "div",
-            { className: "CenterDisplayTitle" },
-            "Chan Kwon "
+            'div',
+            { className: 'LeftSideContent' },
+            React.createElement(
+              'div',
+              { className: 'HomeText' },
+              'I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developers. I am a web developer. '
+            )
           ),
-          React.createElement(
-            "div",
-            { className: "CenterDisplayText" },
-            "I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. I am a web developer. "
-          )
+          React.createElement(ContactBar, null)
+        ),
+        React.createElement(
+          'div',
+          { className: 'RightSideDisplay' },
+          React.createElement('img', { src: 'Chan Kwon.jpg', className: 'RightSideImage' })
         )
       );
     }
@@ -12090,7 +12098,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(5);
-var NavBarLink = __webpack_require__(116);
+var NavBarLink = __webpack_require__(115);
 
 var NavBar = function (_React$Component) {
   _inherits(NavBar, _React$Component);
@@ -12108,9 +12116,8 @@ var NavBar = function (_React$Component) {
         'nav',
         { className: 'NavBar' },
         React.createElement(NavBarLink, { value: 'Home' }),
-        React.createElement(NavBarLink, { value: 'Resume' }),
         React.createElement(NavBarLink, { value: 'Projects' }),
-        React.createElement(NavBarLink, { value: 'Personal' })
+        React.createElement(NavBarLink, { value: 'Contact' })
       );
     }
   }]);
@@ -12122,13 +12129,6 @@ module.exports = NavBar;
 
 /***/ }),
 /* 112 */
-/***/ (function(module, exports) {
-
-"use strict";
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Kwon1\\Desktop\\portfolioSite\\portfolio\\components\\PersonalPage.jsx'\n    at Error (native)");
-
-/***/ }),
-/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12143,7 +12143,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(5);
-var Project = __webpack_require__(239);
+var Project = __webpack_require__(116);
+var NavBar = __webpack_require__(111);
+var ContactBar = __webpack_require__(240);
 
 var ProjectsPage = function (_React$Component) {
   _inherits(ProjectsPage, _React$Component);
@@ -12160,10 +12162,26 @@ var ProjectsPage = function (_React$Component) {
       return React.createElement(
         'div',
         { className: 'CenterDisplay' },
-        React.createElement(Project, null),
-        React.createElement(Project, null),
-        React.createElement(Project, null),
-        React.createElement(Project, null)
+        React.createElement(
+          'div',
+          { className: 'LeftSideDisplay' },
+          React.createElement(NavBar, null),
+          React.createElement('img', { src: 'logo.svg', className: 'LeftSideTitle' }),
+          React.createElement(
+            'div',
+            { className: 'LeftSideContent' },
+            React.createElement(Project, null),
+            React.createElement(Project, null),
+            React.createElement(Project, null),
+            React.createElement(Project, null)
+          ),
+          React.createElement(ContactBar, null)
+        ),
+        React.createElement(
+          'div',
+          { className: 'RightSideDisplay' },
+          React.createElement('img', { src: 'ColorizemeSnap.JPG', className: 'RightSideImage' })
+        )
       );
     }
   }]);
@@ -12174,53 +12192,8 @@ var ProjectsPage = function (_React$Component) {
 module.exports = ProjectsPage;
 
 /***/ }),
+/* 113 */,
 /* 114 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = __webpack_require__(5);
-
-var ResumePage = function (_React$Component) {
-  _inherits(ResumePage, _React$Component);
-
-  function ResumePage() {
-    _classCallCheck(this, ResumePage);
-
-    return _possibleConstructorReturn(this, (ResumePage.__proto__ || Object.getPrototypeOf(ResumePage)).apply(this, arguments));
-  }
-
-  _createClass(ResumePage, [{
-    key: "render",
-    value: function render() {
-      return React.createElement(
-        "div",
-        { className: "CenterDisplay" },
-        React.createElement(
-          "div",
-          { className: "Resume" },
-          "Resume goes here"
-        )
-      );
-    }
-  }]);
-
-  return ResumePage;
-}(React.Component);
-
-module.exports = ResumePage;
-
-/***/ }),
-/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12230,7 +12203,7 @@ module.exports = __webpack_require__(152);
 
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12272,6 +12245,48 @@ var NavBarLink = function (_React$Component) {
 }(React.Component);
 
 module.exports = NavBarLink;
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(5);
+
+var Project = function (_React$Component) {
+  _inherits(Project, _React$Component);
+
+  function Project() {
+    _classCallCheck(this, Project);
+
+    return _possibleConstructorReturn(this, (Project.__proto__ || Object.getPrototypeOf(Project)).apply(this, arguments));
+  }
+
+  _createClass(Project, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        { className: "Project" },
+        "this is a project"
+      );
+    }
+  }]);
+
+  return Project;
+}(React.Component);
+
+module.exports = Project;
 
 /***/ }),
 /* 117 */
@@ -26758,12 +26773,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(5);
-var ReactDOM = __webpack_require__(115);
+var ReactDOM = __webpack_require__(114);
 var NavBar = __webpack_require__(111);
 var HomePage = __webpack_require__(110);
-var ResumePage = __webpack_require__(114);
-var ProjectsPage = __webpack_require__(113);
-var PersonalPage = __webpack_require__(112);
+var ProjectsPage = __webpack_require__(112);
+var ContactPage = __webpack_require__(239);
 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
@@ -26780,7 +26794,6 @@ var App = function (_React$Component) {
       return React.createElement(
         'div',
         { className: 'App' },
-        React.createElement(NavBar, null),
         this.props.children
       );
     }
@@ -26797,9 +26810,8 @@ ReactDOM.render(React.createElement(
     { path: '/', component: App },
     React.createElement(_reactRouter.IndexRoute, { component: HomePage }),
     React.createElement(_reactRouter.Route, { path: 'Home', component: HomePage }),
-    React.createElement(_reactRouter.Route, { path: 'Resume', component: ResumePage }),
-    React.createElement(_reactRouter.Route, { path: 'Projects', component: ProjectsPage }),
-    React.createElement(_reactRouter.Route, { path: 'Personal', component: PersonalPage })
+    React.createElement(_reactRouter.Route, { path: 'Contact', component: ContactPage }),
+    React.createElement(_reactRouter.Route, { path: 'Projects', component: ProjectsPage })
   )
 ), document.getElementById('app'));
 
@@ -26819,31 +26831,117 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(5);
+var NavBar = __webpack_require__(111);
+var ContactBar = __webpack_require__(240);
 
-var Project = function (_React$Component) {
-  _inherits(Project, _React$Component);
+var ContactPage = function (_React$Component) {
+  _inherits(ContactPage, _React$Component);
 
-  function Project() {
-    _classCallCheck(this, Project);
+  function ContactPage() {
+    _classCallCheck(this, ContactPage);
 
-    return _possibleConstructorReturn(this, (Project.__proto__ || Object.getPrototypeOf(Project)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ContactPage.__proto__ || Object.getPrototypeOf(ContactPage)).apply(this, arguments));
   }
 
-  _createClass(Project, [{
+  _createClass(ContactPage, [{
     key: 'render',
     value: function render() {
       return React.createElement(
         'div',
-        null,
-        'this is a project'
+        { className: 'CenterDisplay' },
+        React.createElement(
+          'div',
+          { className: 'LeftSideDisplay' },
+          React.createElement(NavBar, null),
+          React.createElement('img', { src: 'logo.svg', className: 'LeftSideTitle' }),
+          React.createElement(
+            'div',
+            { className: 'LeftSideContent' },
+            React.createElement('img', { src: 'linkedInLogo.png', className: 'LinkedInLogo' }),
+            React.createElement('img', { src: 'GitHubLogo.png', className: 'GitHubLogo' }),
+            React.createElement('img', { src: 'AngelListLogo.png', className: 'AngelListLogo' }),
+            React.createElement(
+              'div',
+              null,
+              'ChanTheManCan@Gmail.Com'
+            )
+          ),
+          React.createElement(ContactBar, null)
+        ),
+        React.createElement(
+          'div',
+          { className: 'RightSideDisplay' },
+          React.createElement('img', { src: 'Chan Kwon.jpg', className: 'RightSideImage' })
+        )
       );
     }
   }]);
 
-  return Project;
+  return ContactPage;
 }(React.Component);
 
-module.exports = Project;
+module.exports = ContactPage;
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(5);
+
+var ContactBar = function (_React$Component) {
+  _inherits(ContactBar, _React$Component);
+
+  function ContactBar() {
+    _classCallCheck(this, ContactBar);
+
+    return _possibleConstructorReturn(this, (ContactBar.__proto__ || Object.getPrototypeOf(ContactBar)).apply(this, arguments));
+  }
+
+  _createClass(ContactBar, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        { className: "ContactBar" },
+        React.createElement(
+          "div",
+          null,
+          React.createElement("img", { src: "linkedInLogo.png", className: "LinkedInLogo" })
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement("img", { src: "GitHubLogo.png", className: "GitHubLogo" })
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement("img", { src: "AngelListLogo.png", className: "AngelListLogo" })
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement("img", { src: "GmailLogo.png", className: "GmailLogo" })
+        )
+      );
+    }
+  }]);
+
+  return ContactBar;
+}(React.Component);
+
+module.exports = ContactBar;
 
 /***/ })
 /******/ ]);

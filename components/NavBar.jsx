@@ -7,9 +7,8 @@ class NavBar extends React.Component {
     return (
       <nav className="NavBar">
         <NavBarLink value="Home"/>
-        <NavBarLink value="Resume"/>
         <NavBarLink value="Projects"/>
-        <NavBarLink value="Personal"/>
+        <NavBarLink value="Contact"/>
       </nav>
     )
   }

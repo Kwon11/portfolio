@@ -3,7 +3,7 @@ var React = require('react');
 class Project extends React.Component {
   render () {
     return (
-      <div>
+      <div className="Project">
       this is a project
       </div>
     )
