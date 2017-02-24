@@ -14,6 +14,9 @@
   padding: 3%;
   color: #EEEEF1;
 }
+.NavBarLink:hover {
+  color: #CD6878;
+}
 
 .CenterDisplay {
   position: relative;
@@ -29,7 +32,7 @@
   height: 100vh;
   width: 50vw;
   text-align: center;
-  background-color: blue;
+  background-color: #003CA6;
 }
 .LeftSideTitle {
   padding: 10%;
@@ -43,6 +46,7 @@
   font-size: 1.2em;
   color: #EEEEF1;
 }
+
 .ContactBar {
   position: fixed;
   display: flex;
@@ -51,6 +55,10 @@
   width: 50vw;
   justify-content: space-around;
   align-items: center;
+}
+
+.Project:hover {
+  color: #CD6878;
 }
 
 .RightSideDisplay {
@@ -65,7 +73,8 @@
 .RightSideImage {
   position: relative;
   display: block;
-  height: 100%;
+  height: 100vh;
+  width: 50vw;
   margin: auto;
 }
 

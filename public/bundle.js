@@ -12150,13 +12150,27 @@ var ContactBar = __webpack_require__(240);
 var ProjectsPage = function (_React$Component) {
   _inherits(ProjectsPage, _React$Component);
 
-  function ProjectsPage() {
+  function ProjectsPage(props) {
     _classCallCheck(this, ProjectsPage);
 
-    return _possibleConstructorReturn(this, (ProjectsPage.__proto__ || Object.getPrototypeOf(ProjectsPage)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (ProjectsPage.__proto__ || Object.getPrototypeOf(ProjectsPage)).call(this, props));
+
+    _this.state = {
+      current: "Chan Kwon"
+    };
+    _this.onClickChange = _this.onClickChange.bind(_this);
+    return _this;
   }
 
   _createClass(ProjectsPage, [{
+    key: 'onClickChange',
+    value: function onClickChange(value) {
+      console.log('it calls this shit bitch', value);
+      this.setState({
+        current: value
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return React.createElement(
@@ -12170,17 +12184,17 @@ var ProjectsPage = function (_React$Component) {
           React.createElement(
             'div',
             { className: 'LeftSideContent' },
-            React.createElement(Project, null),
-            React.createElement(Project, null),
-            React.createElement(Project, null),
-            React.createElement(Project, null)
+            React.createElement(Project, { value: 'StackBear', clickHandler: this.onClickChange }),
+            React.createElement(Project, { value: 'To-Do-Application', clickHandler: this.onClickChange }),
+            React.createElement(Project, { value: 'Colorize', clickHandler: this.onClickChange }),
+            React.createElement(Project, { value: 'Secret-Santa', clickHandler: this.onClickChange })
           ),
           React.createElement(ContactBar, null)
         ),
         React.createElement(
           'div',
           { className: 'RightSideDisplay' },
-          React.createElement('img', { src: 'ColorizemeSnap.JPG', className: 'RightSideImage' })
+          React.createElement('img', { src: this.state.current + ".jpg", className: 'RightSideImage' })
         )
       );
     }
@@ -12266,19 +12280,28 @@ var React = __webpack_require__(5);
 var Project = function (_React$Component) {
   _inherits(Project, _React$Component);
 
-  function Project() {
+  function Project(props) {
     _classCallCheck(this, Project);
 
-    return _possibleConstructorReturn(this, (Project.__proto__ || Object.getPrototypeOf(Project)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Project.__proto__ || Object.getPrototypeOf(Project)).call(this, props));
   }
 
   _createClass(Project, [{
+    key: "handleClick",
+    value: function handleClick(value) {
+      this.props.clickHandler(value);
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return React.createElement(
         "div",
-        { className: "Project" },
-        "this is a project"
+        { className: "Project", value: this.props.value, onClick: function onClick() {
+            return _this2.handleClick(_this2.props.value);
+          } },
+        this.props.value
       );
     }
   }]);
